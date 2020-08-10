@@ -13,7 +13,7 @@ public String getObjectRepoData(String key){
 	
 	
 	try {
-		fis=new FileInputStream("E:\\CoreJavaProgram\\OrangeHRM\\src\\main\\java\\com\\TestBase\\ObjectRepository.properties");
+		fis=new FileInputStream("C:\\Users\\Gaurav-Admin\\git\\OrangeHRM1\\OrangeHRM\\src\\main\\java\\com\\TestBase\\ObjectRepository.properties");
 	} catch (FileNotFoundException e) {
 		
 		e.printStackTrace();
@@ -36,7 +36,7 @@ public String getGlobalRepoData(String key){
 	
 	
 	try {
-		fis=new FileInputStream("E:\\CoreJavaProgram\\OrangeHRM\\src\\main\\java\\com\\TestBase\\GlobalRepository.properties");
+		fis=new FileInputStream("C:\\Users\\Gaurav-Admin\\git\\OrangeHRM1\\OrangeHRM\\src\\main\\java\\com\\TestBase\\GlobalRepository.properties");
 		
 	} catch (FileNotFoundException e) {
 		
