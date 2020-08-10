@@ -65,7 +65,7 @@ public class OrangeHRMAddEmployee extends Keywords {
 		OrangeHRMAddEmployee  obj=new OrangeHRMAddEmployee();
 		obj.openChromeBrowser();
 	    obj.AddEmployee();
-	    obj.closeBrowser();
+	    obj.closeInstance();
 	}
 
 }
