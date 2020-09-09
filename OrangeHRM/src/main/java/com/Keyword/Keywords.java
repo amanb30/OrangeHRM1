@@ -22,6 +22,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.testng.log4testng.Logger;
 
@@ -50,7 +52,7 @@ public class Keywords {
 Logger log=Logger.getLogger(Keywords.class);
 
 
-
+@BeforeClass
 public void startInstance(){
 	
 	reporter=new ExtentHtmlReporter(new File("./Reports/TestcaseExtentReport_"+ timestamp()+".html"));
@@ -235,6 +237,7 @@ public void ScreenShotByTakeScreenShot(String path){
 public void ImplicitWait(){
 	driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 }
+@AfterClass
 public void closeInstance(){
 	driver.quit();
 	report.flush();
