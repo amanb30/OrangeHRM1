@@ -11,7 +11,7 @@ public FileInputStream fis=null;
 
 public String getObjectRepoData(String key){
 	
-	
+
 	try {
 		fis=new FileInputStream("C:\\Users\\Gaurav-Admin\\git\\OrangeHRM1\\OrangeHRM\\src\\main\\java\\com\\TestBase\\ObjectRepository.properties");
 	} catch (FileNotFoundException e) {
